@@ -1,9 +1,10 @@
 # Lab 6 – Scale and Load Balance Your Architecture
 
-## Title
+## Author
 
-Scale and Load Balance Your Architecture
-Author : your name   Reg no : yours   Date :
+* **Name**: NARENDHIRAN P
+* **Register Number**: 212224230177
+* **Date of Submission**: 05/09/2026
 
 ---
 
@@ -66,15 +67,31 @@ Students test the setup by generating traffic and observing automatic scaling an
 
 ## Workflow (To be filled by Student)
 
-Describe step-by-step how you performed this experiment in your own words.
+1.The workflow begins by reviewing the existing EC2-based application architecture in the AWS Management Console, allowing students to understand how instances, networking, and prior configurations are structured before implementing scaling and load balancing.
+
+2.Next, a launch template is created to define the EC2 configuration, including the AMI, instance type, security group, and user data scripts, which standardizes instance deployment for automated scaling.
+
+3.An Auto Scaling Group is then set up using the launch template, where minimum, maximum, and desired capacities are defined to ensure that the application can automatically adjust the number of running instances based on demand.
+
+4.Following this, an Application Load Balancer is configured to distribute incoming traffic across multiple EC2 instances, along with target groups that manage routing and health checks of instances.
+
+5.The Auto Scaling Group is then attached to the load balancer’s target group so that newly launched or terminated instances are automatically registered or deregistered, ensuring continuous availability.
+
+6.Scaling policies are configured using Amazon CloudWatch, where CPU utilization thresholds trigger automatic scaling actions such as adding or removing instances.
+
+7.Finally, the system is tested by generating traffic to observe how the load balancer distributes requests and how the Auto Scaling Group dynamically adjusts the number of instances in response to workload changes.
 
 ---
 
 ## Output Screenshots 
 
+<img width="1919" height="1021" alt="Screenshot 2026-03-12 154410" src="https://github.com/user-attachments/assets/9213b030-16d6-4290-8f80-4aa84f48072f" />
 
----
+<img width="1919" height="1017" alt="Screenshot 2026-03-12 154600" src="https://github.com/user-attachments/assets/af6ff0a9-94f5-429b-bb1f-7ccb88f4bd4e" />
 
+<img width="1917" height="1019" alt="Screenshot 2026-03-12 154837" src="https://github.com/user-attachments/assets/f94a0fab-aea4-42f4-86a7-3391255c0709" />
+
+<img width="1907" height="1019" alt="Screenshot 2026-03-12 161321" src="https://github.com/user-attachments/assets/fb243a39-6f8d-45b7-ba3e-8d6e7c54255d" />
 
 ## Result
 
