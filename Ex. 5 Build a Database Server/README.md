@@ -2,9 +2,9 @@
 
 ## Author
 
-* **Name**: ________________________________
-* **Register Number**: _____________________
-* **Date of Submission**: __________________
+* **Name**: NARENDHIRAN P
+* **Register Number**: 212224230177
+* **Date of Submission**: 01/09/2026
 
 ---
 
@@ -82,36 +82,36 @@ Test the database server by connecting to it locally or remotely and performing 
 
 ## Workflow (Student Explanation)
 
-(Write the steps you followed in your own words)
 
-1. ---
-2. ---
-3. ---
-4. ---
-5. ---
+1. Logged in to the AWS Management Console and launched an Amazon EC2 instance using Amazon Linux 2 AMI.
+2. Configured the security group to allow SSH access (Port 22) and MySQL database access (Port 3306).
+3. Connected to the EC2 instance using SSH and updated the system packages.
+4. Installed the MySQL database server, started the service, and configured the database environment.
+5. Created a sample database and table, inserted records, and verified the data using SQL queries.
 
 ---
 
 ## Output Screenshots (Attach 3)
 
 ### Screenshot 1: EC2 Instance for Database Server
+<img width="1716" height="718" alt="image" src="https://github.com/user-attachments/assets/67b7f5de-b4f9-482f-96c7-892c230f4e9b" />
 
-(Insert Screenshot Here)
 
 ---
 
 ### Screenshot 2: Database Service Running
 
-(Insert Screenshot Here)
+<img width="1909" height="962" alt="Screenshot 2026-05-30 111615" src="https://github.com/user-attachments/assets/ec660c4e-4263-48f9-a849-35aad3b9326c" />
 
 ---
 
 ### Screenshot 3: Sample Database and Table
 
-(Insert Screenshot Here)
+<img width="1919" height="970" alt="Screenshot 2026-05-30 111724" src="https://github.com/user-attachments/assets/446a71b9-e05c-4816-ab43-ebaacdb64feb" />
+
 
 ---
 
 ## Result
 
-This experiment demonstrated how to build a database server in AWS using an EC2 instance. By installing and configuring a DBMS, creating a sample database, and testing connectivity, the fundamentals of hosting and managing a cloud-based database server were underst
+The database server was successfully deployed on an AWS EC2 instance. The MySQL service was installed and configured correctly. A sample database and table were created, records were inserted, and database connectivity was verified through SQL queries. This experiment provided practical experience in deploying and managing a cloud-based database server using AWS services.
